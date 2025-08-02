@@ -1,0 +1,22 @@
+name: supabase-on-scp
+id: 'ari:cloud:compass:d926c5b6-8500-4cc0-ae8b-e0b5c4afa665:component/c0bc404a-5512-475b-abf0-d55726924092/edc9525c-a2d8-41bc-a70b-c45930c4a44e'
+slug: supabase
+description: 'The open source Firebase alternative. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.'
+configVersion: 1
+typeId: SERVICE
+ownerId: null
+fields:
+  tier: 4
+  isMonorepoProject: false
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/Simulnetic/supabase-on-scp'
+relationships: {}
+labels:
+  - 'language:typescript'
+  - 'source:github'
+customFields: null
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
