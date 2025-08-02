@@ -1,0 +1,28 @@
+name: Deploy Supabase
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Supabase, SCP]
+    defaults:
+      run:
+        shell: bash
+        working-directory: cd ~/
+    steps:
+    - name: Checkout Respository
+      uses: actions/checkout@v4
+    - name: Change to directory
+      run: cd supabase-on-scp/docker
+    - name: Stop Services
+      run: docker compose down
+    - name: Pull Images
+      run: docker compose pull
+    - name: Restart Services
+      run: docker compose up -d
