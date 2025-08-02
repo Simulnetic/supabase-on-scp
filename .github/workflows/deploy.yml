@@ -14,7 +14,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: cd ~/
     steps:
     - name: Checkout Respository
       uses: actions/checkout@v4
