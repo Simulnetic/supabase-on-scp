@@ -269,9 +269,6 @@ services:
       REGION: ap-southeast-2
       GLOBAL_S3_BUCKET: simulnetic-cloud-platform
       GLOBAL_S3_PROTOCOL: s3
-      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      AWS_DEFAULT_REGION: ap-southeast-2
       ENABLE_IMAGE_TRANSFORMATION: "true"
       IMGPROXY_URL: http://imgproxy:5001
 
