@@ -267,7 +267,7 @@ services:
       TENANT_ID: scp
       # TODO: https://github.com/supabase/storage-api/issues/55
       REGION: ap-southeast-2
-      GLOBAL_S3_BUCKET: simulnetic-central-files
+      GLOBAL_S3_BUCKET: simulnetic-cloud-platform
       GLOBAL_S3_PROTOCOL: s3
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
