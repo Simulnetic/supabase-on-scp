@@ -11,7 +11,7 @@ services:
 
   studio:
     container_name: supabase-studio
-    image: supabase/studio
+    image: supabase/studio:2025.06.30-sha-6f5982d
     restart: unless-stopped
     healthcheck:
       test:
@@ -162,7 +162,7 @@ services:
 
   rest:
     container_name: supabase-rest
-    image: postgrest/postgrest
+    image: postgrest/postgrest:v12.2.12
     restart: unless-stopped
     depends_on:
       db:
